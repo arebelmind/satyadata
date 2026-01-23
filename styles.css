@@ -118,8 +118,52 @@ main {
   font-size: 18px;
 }
 
+.cta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.cta-row .link-button {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 999px;
+  border: none;
+  line-height: 1;
+}
+
+.cta-or {
+  color: var(--muted);
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  line-height: 1;
+}
+
+.email-reveal {
+  color: var(--muted);
+  font-size: 16px;
+}
+
 .split__content .button {
   margin-top: 24px;
+}
+
+.cta-row .button {
+  margin-top: 0;
+}
+
+.cta-row .link-button:hover {
+  text-decoration: underline;
 }
 
 .topics {
@@ -180,25 +224,51 @@ main {
 .client-slider__track {
   display: flex;
   align-items: center;
-  gap: 72px;
+  gap: 28px;
   width: max-content;
-  animation: client-scroll 32s linear infinite;
+  animation: client-scroll 38s linear infinite;
 }
 
-.client-slider__item {
+.industry-card {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-width: 140px;
+  gap: 16px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #e6edf5;
+  min-width: 280px;
+  box-shadow: 0 16px 30px rgba(15, 25, 40, 0.08);
 }
 
-.client-slider__item img {
-  height: 56px;
-  width: auto;
-  max-width: 200px;
-  object-fit: contain;
-  opacity: 0.9;
+.industry-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #f1f4f9;
+  color: #7a8798;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.industry-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.industry-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2a38;
+  text-align: left;
+}
+
+.industry-card__subtitle {
+  font-size: 13px;
+  color: #94a3b3;
+  text-align: left;
 }
 
 @keyframes client-scroll {
@@ -466,6 +536,16 @@ main {
     margin: 24px auto 0;
   }
 
+  .cta-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-reveal {
+    font-size: 14px;
+  }
+
   .cookie-table {
     grid-template-columns: 1fr;
   }
@@ -475,11 +555,16 @@ main {
   }
 
   .client-slider__track {
-    gap: 40px;
+    gap: 18px;
   }
 
-  .client-slider__item img {
-    height: 42px;
+  .industry-card {
+    min-width: 240px;
+    padding: 14px 16px;
+  }
+
+  .industry-card__title {
+    font-size: 15px;
   }
 }
 

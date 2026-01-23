@@ -91,6 +91,21 @@ document.querySelector("[data-toggle-more]").addEventListener("click", (event) =
   }
 });
 
+const emailToggle = document.querySelector("[data-email-toggle]");
+const emailReveal = document.querySelector("[data-email]");
+if (emailToggle && emailReveal) {
+  emailToggle.addEventListener("click", () => {
+    const isHidden = emailReveal.hasAttribute("hidden");
+    if (isHidden) {
+      emailReveal.removeAttribute("hidden");
+      emailToggle.textContent = "Hide email";
+    } else {
+      emailReveal.setAttribute("hidden", "hidden");
+      emailToggle.textContent = "Show email";
+    }
+  });
+}
+
 if (window.VANTA) {
   VANTA.NET({
     el: "#hero-vanta",
