@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1f6fb" />
+      <stop offset="100%" stop-color="#e8f0f8" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7aa8" />
+      <stop offset="100%" stop-color="#c61b4f" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#1b2a41" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <rect width="900" height="700" rx="36" fill="url(#bg)" />
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="60" width="760" height="560" rx="28" fill="#ffffff" />
+  </g>
+
+  <rect x="110" y="105" width="220" height="14" rx="7" fill="#c9d6e5" />
+  <rect x="110" y="130" width="140" height="10" rx="5" fill="#e0e8f2" />
+
+  <rect x="110" y="180" width="320" height="180" rx="18" fill="#f6f9fd" stroke="#e4edf7" />
+  <rect x="450" y="180" width="310" height="180" rx="18" fill="#f6f9fd" stroke="#e4edf7" />
+
+  <rect x="130" y="210" width="80" height="10" rx="5" fill="#c9d6e5" />
+  <rect x="130" y="235" width="120" height="8" rx="4" fill="#e0e8f2" />
+
+  <path d="M140 310 L190 280 L230 300 L270 250 L310 260 L350 230 L400 245" fill="none" stroke="url(#accent)" stroke-width="4" />
+  <circle cx="190" cy="280" r="6" fill="#ff7aa8" />
+  <circle cx="270" cy="250" r="6" fill="#c61b4f" />
+  <circle cx="350" cy="230" r="6" fill="#ff7aa8" />
+
+  <rect x="470" y="210" width="90" height="10" rx="5" fill="#c9d6e5" />
+  <rect x="470" y="235" width="140" height="8" rx="4" fill="#e0e8f2" />
+
+  <rect x="470" y="275" width="200" height="10" rx="5" fill="#d6e4f2" />
+  <rect x="470" y="300" width="230" height="10" rx="5" fill="#d6e4f2" />
+  <rect x="470" y="325" width="170" height="10" rx="5" fill="#d6e4f2" />
+
+  <rect x="110" y="390" width="650" height="180" rx="18" fill="#f6f9fd" stroke="#e4edf7" />
+  <rect x="130" y="420" width="140" height="10" rx="5" fill="#c9d6e5" />
+  <rect x="130" y="445" width="200" height="8" rx="4" fill="#e0e8f2" />
+
+  <g fill="#b6c7da">
+    <rect x="150" y="500" width="40" height="50" rx="8" />
+    <rect x="210" y="470" width="40" height="80" rx="8" />
+    <rect x="270" y="520" width="40" height="30" rx="8" />
+    <rect x="330" y="455" width="40" height="95" rx="8" />
+    <rect x="390" y="490" width="40" height="60" rx="8" />
+  </g>
+
+  <g fill="#ff7aa8">
+    <rect x="470" y="485" width="34" height="65" rx="6" />
+    <rect x="515" y="455" width="34" height="95" rx="6" />
+    <rect x="560" y="515" width="34" height="35" rx="6" />
+    <rect x="605" y="440" width="34" height="110" rx="6" />
+    <rect x="650" y="500" width="34" height="50" rx="6" />
+  </g>
+
+  <rect x="740" y="105" width="70" height="12" rx="6" fill="url(#accent)" />
+</svg>
